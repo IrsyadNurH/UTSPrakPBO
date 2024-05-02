@@ -1,0 +1,45 @@
+Penjelasan Program 
+Program di atas adalah program simulasi toko senjata fantasi. Program ini menggunakan konsep Encapsulation, Inheritance, Polimorphism, dan Interface untuk membangun struktur dan fungsionalitasnya.
+
+# Encapsulation
+
+Encapsulation terlihat pada kelas-kelas di dalam program:
+
+Senjata: Kelas abstrak yang mendefinisikan atribut dan metode dasar untuk semua senjata.
+SenjataFantasi: Kelas abstrak yang mewarisi sifat dari kelas Senjata dan menambahkan atribut dan metode spesifik untuk senjata fantasi.
+Pedang: Kelas konkret yang mewarisi sifat dari kelas SenjataFantasi dan menambahkan atribut dan metode spesifik untuk pedang.
+TongkatSihir: Kelas konkret yang mewarisi sifat dari kelas SenjataFantasi dan menambahkan atribut dan metode spesifik untuk tongkat sihir.
+Encapsulation memungkinkan setiap kelas untuk menyembunyikan detail implementasinya dan hanya mengekspos informasi yang diperlukan melalui metode publik. Hal ini meningkatkan modularitas dan keamanan kode.
+
+# Inheritance
+
+Inheritance terlihat pada hubungan antar kelas:
+
+SenjataFantasi mewarisi sifat dari kelas Senjata.
+Pedang dan TongkatSihir mewarisi sifat dari kelas SenjataFantasi.
+Inheritance memungkinkan kelas baru untuk mendapatkan sifat dari kelas yang sudah ada, sehingga mengurangi duplikasi kode dan meningkatkan reusability.
+
+# Polimorphism
+
+Polimorphism terlihat pada:
+
+Metode getSerangan(): Setiap kelas memiliki implementasi yang berbeda untuk menghitung bonus serangan berdasarkan jenis senjatanya.
+Metode getSeranganAction(): Setiap kelas mengembalikan string yang berbeda untuk menggambarkan aksi serangannya.
+Polimorphism memungkinkan objek dari kelas yang berbeda untuk merespons pesan yang sama dengan cara yang berbeda, sesuai dengan jenis objeknya.
+
+# Interface
+
+Interface terlihat pada kelas Senjata:
+
+Kelas Senjata mendefinisikan beberapa metode abstrak yang harus diimplementasikan oleh semua kelas yang mewarisinya, seperti getHarga(), getNama(), getJenis(), getSerangan(), getBonusSerangan(), dan getSeranganAction().
+Interface membantu mendefinisikan kontrak antara kelas-kelas yang berbeda, memastikan bahwa mereka memiliki metode dan properti yang kompatibel.
+
+Kesimpulan
+Program ini menunjukkan bagaimana Encapsulation, Inheritance, Polimorphism, dan Interface dapat digunakan untuk membangun program yang modular, reusable, dan extensible.
+
+Berikut adalah beberapa poin penting lainnya:
+
+Program ini menggunakan kelas ArrayList untuk menyimpan daftar senjata.
+Program ini menggunakan format String.format() untuk memformat harga dengan dua angka desimal.
+Program ini menampilkan informasi tentang setiap senjata, termasuk nama, jenis, harga, serangan, dan tingkat kelangkaan.
+Program ini menghitung total pembayaran untuk semua senjata yang dibeli.
